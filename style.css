@@ -933,6 +933,14 @@ h2,h1{
 
 
 @media(max-width: 800px){
+  .modal-center{
+    width: 98%;
+    overflow-y: scroll;
+  }
+  .modal-content{
+    margin-top: 5px;
+    overflow-y: scroll;
+  }
   .career{
     font-size: 11pt;
     line-height: 1;
