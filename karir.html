@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Karir | Hydenacademy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="plugin/dist/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body style="background: #fff;">
+  <!-- Swiper -->
+  <header>
+    <div class="top-header-akademi">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logowhite.svg" width="100px" alt="logo">
+        </a>
+      </div>
+      <div class="nav">
+        <div class="open-nav">
+           <i class="fa fa-bars"></i>
+        </div>
+        <nav>
+          <div class="close-nav">
+            <i class="fa fa-times"></i>
+          </div>
+          <ul>
+            <li><a href="index.html"> Beranda </a></li>
+            <li><a href="index.html#tentangKami" id="tentangkami"> Tentang Kami </a></li>
+            <li><a href="index.html#galeriSection" id="galeri-button"> Galeri </a></li>
+
+            <li><a href="akademi.html"> Akademi </a></li>
+            <li><a href="karir.html"> Karir </a></li>
+            <li><a href="dukung.html"> Dukung Kami </a></li>
+            <li><a href="kontak.html"> Kontak </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="clearfix"></div>
+  
+
+  <main>
+    <div class="col-12 program-academy-ac">
+      <div class=" f-poppins title-academy1">
+        <div class="header-academy header-karir">
+          <div class="big-font-ac"><h7>Karir Hydenacademy</h7></div>
+          <div class="title-small-ac">hydenacademy ada untuk memberdayakan<Br> penyandang disabilitas</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 bread-crumb f-poppins">
+      <a href="index.html">Beranda</a><i class="fa fa-angle-right"></i>&nbsp;Karir
+    </div>
+
+    <div class="col-12 title-ac-box">
+      <div class="title-big f-poppins">
+          <div class="big-font"><h7>Karir hydenacademy</h7></div>
+        </div>
+        <div class="title-small f-poppins">
+           hydenacademy
+        </div>
+    </div>
+    <div class="col-12 career">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus tristique blandit. Nam non tincidunt lectus, vitae porttitor velit. Phasellus ac velit non ante viverra sollicitudin eu vitae metus. Donec facilisis congue egestas. Nulla facilisi. Ut maximus, orci sit amet ornare vehicula, massa leo faucibus eros, id aliquet eros eros lobortis erat. Aliquam nec luctus sem. Nam auctor lectus sit amet mauris egestas bibendum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum id rhoncus diam. In a velit ligula. Maecenas mollis efficitur sollicitudin. Nunc cursus nunc in eros mattis dignissim. Duis fringilla turpis sit amet porttitor vestibulum. Suspendisse id sem ligula. Nulla mollis nunc eu pharetra porttitor.
+      </p>
+      <p>
+        Suspendisse potenti. Aenean commodo interdum sapien, in commodo velit tristique nec. Integer at ipsum ipsum. Nunc sem odio, fermentum id nisl a, consectetur auctor augue. Praesent a erat ac purus tincidunt dapibus. Phasellus non interdum felis, in vehicula sem. Aliquam sed metus lorem. Donec ut quam venenatis, pulvinar est non, congue magna. Integer iaculis mollis sapien, at vulputate est feugiat vel.
+      </p>
+       <div style="margin-bottom: 100px;"></div>
+    </div>
+
+
+   
+  </main>
+
+
+
+  <img src="img/shape2.svg" width="100%" style="margin-bottom: -4px;">
+  <footer>
+    <div class="col-6 footer-left">
+      <div class="email f-poppins">
+       <i class="fa fa-envelope-o"></i> &nbsp;:&nbsp;info@academy.id
+      </div>
+      <div class="number-phone f-poppins">
+        <i class="fa fa-whatsapp"></i> / <i class="fa fa-phone"></i> &nbsp; :&nbsp; +62-812-819-657-10
+      </div>
+    </div>
+     <div class="col-6 footer-right">
+      <div class="subs-form">
+        <form action="#" method="POST">
+          <h2>Subscribe</h2>
+          <input type="text" name="" placeholder="Masukan Email Anda"><input type="submit" name="" value="Subscribe">
+        </form>
+      </div>
+      <div class="medsos f-poppins">
+        <a href="http://instagram.com/hydenacademy" target="_blank">Instagram</a> <a href="http://Facebook.com" target="_blank">Facebook</a>
+      </div>
+    </div>
+    <div class="col-12 footer-bottom f-poppins">
+      <center> &copy; 2019 - Hydenacademy</center>
+    </div>
+  </footer>
+
+  
+
+  <!-- Swiper JS -->
+  <script src="plugin/dist/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+
+
+   $(document).ready(function(){
+      $("nav div").slideUp();
+      $("nav ul").slideUp();
+
+     $(".close-nav i").click(function(){
+       $("nav div").fadeOut(300);
+        $("nav ul").fadeOut(300);
+        $("nav").animate({"width":"0%"},700);
+      });
+
+     $(".open-nav i").click(function(){
+      $("nav div").css({"opacity":"1"});
+      $("nav div").fadeIn(800);
+      $("nav ul").slideDown(800);
+      $("nav").animate({"width":"300px"},300);
+     })
+   })
+
+   // Add smooth scrolling to all links
+  $("#tentangkami,#galeri-button").click(function(event) {
+      
+
+      
+
+      $("nav div").fadeOut(300);
+      $("nav ul").fadeOut(300);
+      $("nav").animate({"width":"0%"},700);
+
+    });
+  </script>
+</body>
+</html>

@@ -12,8 +12,9 @@ body {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color:#000;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 2000px;
 }
 a{
   color: #222;
@@ -419,15 +420,15 @@ nav{
 }
 .box-program:nth-child(1) .detail-footer,
  .box-program:nth-child(1) .time{
-  background: #A26D42;
+  background: linear-gradient(45deg,#999,#555,#777);
 }
 .box-program:nth-child(2) .detail-footer,
  .box-program:nth-child(2) .time{
-  background: #A2A2A8;
+  background: linear-gradient(45deg,#999,#555,#777);
 }
 .box-program:nth-child(3) .detail-footer,
  .box-program:nth-child(3) .time{
-  background: #FACF23;
+  background: linear-gradient(45deg,#999,#555,#777);
 }
 .detail-footer a{
   background: #fff;
@@ -451,6 +452,7 @@ nav{
   top: 0;
   right: 0;
 }
+
 .swp{
   margin-top: 5px;
 }
@@ -458,6 +460,7 @@ nav{
   margin-top: 30px;
 
 }
+
 .pagenation-program .swiper-pagination-bullet{
   top: 0 !important;
   background: #FEF966;
@@ -685,7 +688,264 @@ footer .col-6{
 }
 
 
+
+
+
+
+
+/*Akademi*/
+.top-header-akademi{
+  padding: 28px 28px 25px 60px;
+  background: #333;
+}
+.title-academy1{
+  margin-top: 0px !important;
+}
+.header-academy{
+  padding: 150px 40px 150px 40px;
+  color: #fff;
+  background: url(img/1.jpg)center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 99;
+}
+.bread-crumb{
+  padding: 20px 20px 20px 50px;
+  background: #333;
+  font-size: 10pt;
+  letter-spacing: 1px;
+   color: #fafafa;
+}
+.bread-crumb i{
+  margin-right: 20px;
+  margin-left: 20px; 
+}
+.bread-crumb a{
+  color: #fafafa;
+
+}
+.bread-crumb a:hover{
+  text-decoration: underline;
+}
+.Duration{
+  font-size: 10pt;
+  font-style: italic;
+  color: #999;
+}
+.big-font-ac{
+  font-size: 25pt;
+  font-weight: bold;
+}
+.title-small-ac{
+  font-size: 13pt;
+}
+.level{
+  width: 330px;
+  background: linear-gradient(45deg,#fff,#FBFBFB,#fafafa);
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+.t-center{
+  text-align: center;
+}
+.t-left{
+  text-align: left;
+}
+.pargraph-lvl ul{
+  text-align: left;
+}
+.icon-lvl{
+  font-size: 50pt;
+}
+.Sylabus{
+  margin-top: 15px;
+}
+.pargraph-lvl li{
+  list-style: circle;
+  margin-top: 20px;
+}
+.pargraph-lvl{
+  font-size: 10pt;
+  text-align: center;
+}
+.button-goals{
+  margin-top: 30px;
+  cursor: pointer;
+  padding: 10px;
+  width: 230px;
+  background: #333;
+  font-size:12pt;
+  color: #fff;
+}
+.title-pa h1,.title-pa h2,.title-pa h3,.title-pa h4{
+  margin: 50px 0px -100px 30px;
+}
+.swipe-con-height-ac{
+  height: 700px;
+  top: 0%;
+  right: 0%;
+  -webkit-transform:translate(0%,0%);
+  -ms-transform:translate(0%,0%);
+  -o-transform:translate(0%,0%);
+  -moz-transform:translate(0%,0%);
+  width: 100%;
+  margin-top: 30px;
+}
+h2,h1{
+  font-family: "poppins",sans-serif;
+}
+.pagenation-ac .swiper-pagination-bullet{
+ background: #222; 
+}
+.lvl-ac{
+  margin-top: 250px;
+  margin-bottom: -200px;
+}
+.swiper-container-centered-2{
+  top: 50%;
+  right: 0%;
+  -webkit-transform:translate(0%,-50%);
+  -ms-transform:translate(0%,-50%);
+  -o-transform:translate(0%,-50%);
+  -moz-transform:translate(0%,-50%);
+  width: 100%;
+  height: 380px;
+  margin-top: 30px;
+}
+.swiper-container-centered-2 .box-program{
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  width: 400px;
+}
+.title-lvl h2{
+  font-size: 15pt;
+}
+.title-ac-box{
+  margin-top: 150px;
+  padding-left: 50px;
+  margin-bottom: -100px;
+}
+
+
+
+
+
+
+/*Karir*/
+.header-karir{
+  padding: 120px 40px 120px 40px;
+  color: #fff;
+  background: url(img/2.jpg)center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 99;
+}
+.career{
+  font-family: "poppins",sans-serif;
+  font-size: 13pt;
+  margin-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.career p{
+  line-height: 3;
+}
+
+
+
+
+/*Dukung*/
+.header-dukung{
+  padding: 150px 40px 150px 40px;
+  color: #fff;
+  background: url(img/4.jpg)top;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 99;
+}
+.box-norek{
+  border:1px solid #333;
+  display: inline-block;
+  padding: 10px;
+  width: 500px;
+  line-height: 3;
+}
+.box-norek table{
+  width: 500px;
+}
+
+
+/*Kontak*/
+.header-kontak{
+  padding: 150px 40px 150px 40px;
+  color: #fff;
+  background: url(img/5.jpg)top;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 99;
+}
+
+/*Modal*/
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+}
+.modal{
+  display: none;
+}
+.modal-content{
+  overflow: auto;
+  background: #fff;
+  margin-top: 40px;
+  padding: 30px;
+  position: relative;
+  border-radius: 5px;
+}
+.close-modal{
+  position: absolute;
+  right: 30px;
+  font-size: 25pt;
+  cursor: pointer;
+}
+.modal-center{
+  width: 35%;
+  margin: 0 auto;
+}
+.p-goals{
+  line-height: 2;
+}
+
+
+
+
+
 @media(max-width: 800px){
+  .career{
+    font-size: 11pt;
+    line-height: 1;
+  }
+  .email{
+    font-size: 20pt;
+  }
+  .number-phone{
+    font-size: 14pt;
+  }
+  .header-karir,.header-academy{
+    background-attachment: local !important;
+  }
   .logo-height{
     display: none;
   }
@@ -838,7 +1098,21 @@ footer .col-6{
   .program-head{
     margin-top: 0px;
   }
-
+  .level{
+    width: 100%;
+  }
+  .title-ac-box{
+    padding-left: 0px !important;
+  }
+  .top-header-akademi{
+    padding: 25px !important;
+  }
+  .box-norek{
+    width: 100%;
+  }
+  .box-norek table{
+    width: auto;
+  }
 
   
 }
@@ -851,20 +1125,4 @@ footer .col-6{
   .note-paper{
     display: none; 
   }
-}
-
-
-
-
-/*Akademi*/
-.top-header-akademi{
-  padding: 28px 28px 25px 60px;
-  background: #333;
-}
-.program-academy{
-  height: 500px;
-}
-.title-academy1{
-  margin-top: 30px !important;
-  margin: 20px;
 }
