@@ -17,7 +17,7 @@
 </head>
 <body>
   <!-- Swiper -->
-  <header>
+  <header class="header-home">
     <div class="top-header">
       <div class="logo">
         <a href="index.html">
@@ -34,10 +34,10 @@
           </div>
           <ul>
             <li><a href="index.html"> Beranda </a></li>
-            <li><a href="index.html"> Tentang Kami </a></li>
-            <li><a href="index.html"> Galeri </a></li>
+            <li><a href="#tentangKami" id="tentangkami"> Tentang Kami </a></li>
+            <li><a href="#galeriSection" id="galeri-button"> Galeri </a></li>
 
-            <li><a href="index.html"> Akademi </a></li>
+            <li><a href="akademi.html"> Akademi </a></li>
             <li><a href="index.html"> Karir </a></li>
             <li><a href="index.html"> Dukung Kami </a></li>
             <li><a href="index.html"> Kontak </a></li>
@@ -47,7 +47,6 @@
     </div>
     <div class="swiper-container swiper-header">
       <div class="swiper-wrapper"  data-hash="slide1">
-
         <div class="swiper-slide" style="background: url(img/head-1.jpg) center;">
           <div class="quotes-head f-poppins">
             Selamat Hari Disabilitas<br>
@@ -94,11 +93,11 @@
         <img src="img/logo.svg" width="450px">
       </div>
     </div>
-    <section id="about">
+    <section id="tentangKami">
       <div class="about col-7 about-caption">
       <div class="moveCenter">
         <div class="title-big f-poppins">
-          <div class="big-font"><h7>T</h7></div><div class="main-head">&nbsp;entang Kami</div>
+          <div class="big-font"><h7>Tentang Kami</h7></div>
         </div>
         <div class="title-small f-poppins">
            Hydenacademy
@@ -119,84 +118,85 @@
     </section>
 
     <!-- Gallery -->
-    <div class="col-12 gallery-col">
-      <div class="swiper-container gallery-top gallery-div">
-        <div class="swiper-wrapper img-gal-cover">
-          <div class="swiper-slide" style="background-image:url(img/gal1.jpg)">
-            <div class="gal-caption f-poppins">
-              Ruang Meeting Hydenacademy
+    <section>
+      <div class="col-12 gallery-col" id="galeriSection">
+        <div class="swiper-container gallery-top gallery-div">
+          <div class="swiper-wrapper img-gal-cover">
+            <div class="swiper-slide" style="background-image:url(img/gal1.jpg)">
+              <div class="gal-caption f-poppins">
+                Ruang Meeting Hydenacademy
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(img/gal2.jpg)">
+              <div class="gal-caption f-poppins">
+                Kegiatan Hydenacademy
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(img/head-1.jpg)">
+              <div class="gal-caption f-poppins">
+                Lorem Ipsum
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(img/head-2.jpg)">
+              <div class="gal-caption f-poppins">
+                Sit Amet Dolor
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(img/gal1.jpg)">
+              <div class="gal-caption f-poppins">
+                Ruang Meeting Hydenacademy
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(img/head-3.jpg)">
+              <div class="gal-caption f-poppins">
+                Hydenacademy
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(img/gal2.jpg)">
+              <div class="gal-caption f-poppins">
+                Hydenacademy id
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(img/gal1.jpg)">
+              <div class="gal-caption f-poppins">
+                Lorem Ipsum
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(img/gal2.jpg)">
+              <div class="gal-caption f-poppins">
+                Sit Amet Dolor
+              </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(img/gal1.jpg)">
+              <div class="gal-caption f-poppins">
+                Ruang Meeting Hydenacademy
+              </div>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image:url(img/gal2.jpg)">
-            <div class="gal-caption f-poppins">
-              Kegiatan Hydenacademy
-            </div>
-          </div>
-          <div class="swiper-slide" style="background-image:url(img/head-1.jpg)">
-            <div class="gal-caption f-poppins">
-              Lorem Ipsum
-            </div>
-          </div>
-          <div class="swiper-slide" style="background-image:url(img/head-2.jpg)">
-            <div class="gal-caption f-poppins">
-              Sit Amet Dolor
-            </div>
-          </div>
-          <div class="swiper-slide" style="background-image:url(img/gal1.jpg)">
-            <div class="gal-caption f-poppins">
-              Ruang Meeting Hydenacademy
-            </div>
-          </div>
-          <div class="swiper-slide" style="background-image:url(img/head-3.jpg)">
-            <div class="gal-caption f-poppins">
-              Hydenacademy
-            </div>
-          </div>
-          <div class="swiper-slide" style="background-image:url(img/gal2.jpg)">
-            <div class="gal-caption f-poppins">
-              Hydenacademy.id
-            </div>
-          </div>
-          <div class="swiper-slide" style="background-image:url(img/gal1.jpg)">
-            <div class="gal-caption f-poppins">
-              Lorem Ipsum
-            </div>
-          </div>
-          <div class="swiper-slide" style="background-image:url(img/gal2.jpg)">
-            <div class="gal-caption f-poppins">
-              Sit Amet Dolor
-            </div>
-          </div>
-          <div class="swiper-slide" style="background-image:url(img/gal1.jpg)">
-            <div class="gal-caption f-poppins">
-              Ruang Meeting Hydenacademy
-            </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next swiper-button-white"></div>
+          <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+        <div class="swiper-container gallery-thumbs thumbs-gallery">
+          <div class="swiper-wrapper img-gal-cover">
+            <div class="swiper-slide" style="background-image:url(img/gal1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/gal2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/head-1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/head-2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/gal1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/head-3.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/gal2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/gal1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/gal2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/gal1.jpg)"></div>
           </div>
         </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next swiper-button-white"></div>
-        <div class="swiper-button-prev swiper-button-white"></div>
       </div>
-      <div class="swiper-container gallery-thumbs thumbs-gallery">
-        <div class="swiper-wrapper img-gal-cover">
-          <div class="swiper-slide" style="background-image:url(img/gal1.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(img/gal2.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(img/head-1.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(img/head-2.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(img/gal1.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(img/head-3.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(img/gal2.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(img/gal1.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(img/gal2.jpg)"></div>
-          <div class="swiper-slide" style="background-image:url(img/gal1.jpg)"></div>
-        </div>
-      </div>
-    </div>
-    <div class="clearfix"></div>
+    </section>
     <div class="col-12 program-academy">
       <div class="text-big-program">
         <div class="title-big f-poppins">
-           <div class="big-font"><h7>P</h7></div><div class="main-head">&nbsp;rogram Academy</div>
+           <div class="big-font program-head"><h7>Program Academy</h7></div>
         </div>
         <div class="title-small f-poppins program-small">
            Program Pelatihan Kami
@@ -220,9 +220,6 @@
                 </p>
               </div>
               <div class="detail-footer">
-                <div class="detail-button">
-                  <a href="#">Detail</a>
-                </div>
               </div>
             </div>
             <div class="swiper-slide box-program f-poppins">
@@ -241,9 +238,6 @@
                 </p>
               </div>
               <div class="detail-footer">
-                <div class="detail-button">
-                  <a href="#">Detail</a>
-                </div>
               </div>
             </div>
             <div class="swiper-slide box-program f-poppins">
@@ -260,17 +254,19 @@
                 </p>
               </div>
               <div class="detail-footer">
-                <div class="detail-button">
-                  <a href="#">Detail</a>
-                </div>
               </div>
             </div>
-            
-
           </div>
           <!-- Add Pagination -->
           <div class="swiper-pagination pagenation-program"></div>
         </div>
+    </div>
+    <div class="col-12">
+      <div class="button-more">
+        <center>
+          <a href="#">Selengkapnya</a>
+        </center>
+      </div>
     </div>
     <div class="col-12 info-col">
       <div class="info f-poppins">
@@ -316,7 +312,7 @@
         </form>
       </div>
     </div>
-
+    <div class="clearfix"></div>
     <img src="img/shape2.svg" width="100%" style="margin-bottom: -4px;">
 
   </main>
@@ -422,6 +418,28 @@
       $("nav").animate({"width":"300px"},300);
      })
    })
+
+   // Add smooth scrolling to all links
+  $("#tentangkami,#galeri-button").click(function(event) {
+      
+
+      if (this.hash !== "") {
+
+        event.preventDefault();
+        var hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 300, function(){
+          window.location.hash = hash;
+        });
+      }
+
+      $("nav div").fadeOut(300);
+      $("nav ul").fadeOut(300);
+      $("nav").animate({"width":"0%"},700);
+
+    });
   </script>
 </body>
 </html>

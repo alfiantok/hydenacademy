@@ -5,6 +5,7 @@ html, body {
   position: relative;
   height: 100%;
   background: #fff;
+  scroll-behavior: smooth;
 }
 body {
   background: #eee;
@@ -18,10 +19,12 @@ a{
   color: #222;
   text-decoration: none;
 }
-header{
+.header-home{
   position: relative;
   height: 100vh;
+  min-height: 550px;
 }
+
 .moveCenter{
   position: absolute;
   top: 50%;
@@ -100,6 +103,7 @@ header{
   background: #333;
   padding: 5px 15px 5px 15px;
   border-radius: 5px;
+  z-index: 99999;
 }
 .nav nav li{
   list-style: none;
@@ -115,6 +119,7 @@ nav{
   overflow-y: auto;
   width: 0px;
   padding-top: 100px;
+  z-index: 99999;
 }
 .nav li{
   margin-right: 40px;
@@ -292,13 +297,14 @@ nav{
 /*Heading*/
 .title-big{
   margin-top: -100px;
-  font-size: 30pt;
+  font-size: 25pt;
   font-weight: bold;
 }
 .title-big .big-font{
-  margin-bottom: -200px;
   display: inline-block;
-  font-size: 65pt;
+}
+.program-head{
+  margin-top: 100px;
 }
 .title-big .main-head{
   display: inline-block;
@@ -306,8 +312,6 @@ nav{
   vertical-align: top;
 }
 .title-small{
-  margin-top: -36px;
-  margin-left: 45px;
   font-weight: bold;
   font-size: 13pt;
 }
@@ -315,6 +319,7 @@ nav{
 /*--Gallery--*/
 .gallery-col{
   height: 100vh;
+  min-height: 550px;
 }
 
 .gallery-div {
@@ -363,12 +368,12 @@ nav{
 /*-----Program------*/
 .program-academy{
   background: #fff;
-  height: 100vh;
+  height: 530px;
   position: relative;
 }
 .text-big-program{
   position: absolute !important;
-  top: 120px;
+  top: 30px;
   left: 50px;
 }
 .swiper-container-centered{
@@ -535,12 +540,16 @@ nav{
 }
 .form-contact{
   margin-left: 35px;
+  position: absolute;
+  display: block;
+  float: none;
+  width: 30%;
 }
 .name-emal input{
-  width: 26.5% !important;
+  width: 43% !important;
 }
 .form-contact input,.form-contact textarea{
-  width: 56%;
+  width: 95%;
   padding: 8px;
   margin: 15px 10px 15px 10px;
   border:none;
@@ -646,6 +655,35 @@ footer .col-6{
   padding: 20px;
 }
 
+.button-more a{
+  font-weight: bold;
+  padding: 12px;
+  background: #fff;
+  display: block;
+  width: 300px;
+  border:3px solid #333;
+  margin: 20px;
+  border-radius: 100px;
+  box-shadow: 0px 20px 10px -10px rgba(0,0,0,0.3);
+  transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+.button-more a:hover{
+  background: #333;
+  color: #fff;
+  transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+.top-header-akademi{
+
+}
+
 
 @media(max-width: 800px){
   .logo-height{
@@ -675,12 +713,11 @@ footer .col-6{
     font-size: 11pt;
   }
   .title-big{
-    margin-top: 00px;
-    font-size: 17pt;
+    font-size: 20pt;
     margin-left: 30px;
   }
   .title-small{
-    margin-left: 65px;
+    margin-left: 30px;
   }
   .followus-header{
     font-size: 11pt;
@@ -707,23 +744,19 @@ footer .col-6{
     -o-transform:translate(0%,-0%);
     -moz-transform:translate(0%,-0%);
   }
-  .text-big-program{
-    margin-top: 150px;
-    margin-left: -70px;
-  }
-  .program-small{
-    margin-left: 80px;
+  .moveCenter{
+    top: 10%;
   }
   .detail-program{
     font-size: 9pt;
     line-height: 1.5;
   }
   .text-big-program{
-    margin-top: 150px;
-    margin-left: -70px;
+    margin-top: 10px;
+    left: 0;
   }
-  .program-small{
-    margin-left: 80px;
+  .button-about a{
+    font-size: 10pt;
   }
   .detail-program{
     font-size: 9pt;
@@ -757,9 +790,19 @@ footer .col-6{
   }
   .form-contact{
     margin: 25px;
+    width: auto;
+  }
+  .location h1{
+    margin-left: 30px;
+  }
+  .contact-form h1{
+    margin-left: 30px;
   }
   .name-emal input{
     width: 42% !important;
+  }
+  .contact-loc{
+    height: 600px;
   }
   .form-contact input,.form-contact textarea{
     width: 92%;
@@ -768,14 +811,14 @@ footer .col-6{
     padding: 30px;
   }
   footer .col-6:nth-child(1){
-    height: 30vh;
+    height: 180px;
   }
   footer .col-6:nth-child(2){
-    height: 60vh;
+    height: 400px;
   }
   
   .title-big{
-    margin-top: -250px;
+    margin-top: 0px;
   }
   .logo img{
     width: 120px;
@@ -792,6 +835,10 @@ footer .col-6{
   .info-col{
     background-attachment: local;
   }
+  .program-head{
+    margin-top: 0px;
+  }
+
 
   
 }
@@ -804,4 +851,20 @@ footer .col-6{
   .note-paper{
     display: none; 
   }
+}
+
+
+
+
+/*Akademi*/
+.top-header-akademi{
+  padding: 28px 28px 25px 60px;
+  background: #333;
+}
+.program-academy{
+  height: 500px;
+}
+.title-academy1{
+  margin-top: 30px !important;
+  margin: 20px;
 }
